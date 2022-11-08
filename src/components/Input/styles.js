@@ -12,13 +12,15 @@ const InputContainer = styled.div`
   input {
     padding: 10px 25px;
     line-height: 130px;
-    font-size: 3.5rem;
+    font-size: 4rem;
     text-align: end;
     font-family: "Roboto";
     width: 100%;
     height: 80px;
-    background-color: #2f2d39;
-    color: #fefefe;
+    background-color: #f0f0f0;
+    border: none;
+    border-bottom: 1px solid #dedede;
+    color: #0E0E10;
   }
 `;
 

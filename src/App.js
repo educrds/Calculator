@@ -25,10 +25,12 @@ const App = () => {
       setfirstNumber(String(currentNumber));
       setCurrentNumber("0");
       setOperation("+");
+      console.log(currentNumber);
     } else {
       const sum = Number(firstNumber) + Number(currentNumber);
       setCurrentNumber(String(sum));
       setOperation("");
+      console.log(currentNumber);
     }
   };
   const handleRemNumbers = () => {
@@ -40,6 +42,7 @@ const App = () => {
       const rem = Number(firstNumber) - Number(currentNumber);
       setCurrentNumber(String(rem));
       setOperation("");
+      setfirstNumber("0");
     }
   };
   const handleMulNumbers = () => {
@@ -51,6 +54,7 @@ const App = () => {
       const mul = Number(firstNumber) * Number(currentNumber);
       setCurrentNumber(String(mul));
       setOperation("");
+      setfirstNumber("0");
     }
   };
   const handleDivNumbers = () => {
@@ -62,17 +66,20 @@ const App = () => {
       const div = Number(firstNumber) / Number(currentNumber);
       setCurrentNumber(String(div));
       setOperation("");
+      setfirstNumber("0");
     }
   };
   const handlePercentage = () => {
     const per = String(currentNumber) / 100;
     setCurrentNumber(String(per));
     setOperation("");
+    setfirstNumber("0");
   };
   const handleSquare = () => {
     const sqr = String(Math.sqrt(currentNumber));
     setCurrentNumber(String(sqr));
     setOperation("");
+    setfirstNumber("0");
   };
   const handleEquals = () => {
     if (firstNumber !== "0" && operation !== "" && currentNumber !== "0") {
