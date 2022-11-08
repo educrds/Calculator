@@ -1,16 +1,16 @@
 import styled from "styled-components";
-import Button from ".";
 
 const ButtonContainer = styled.button`
-  padding: 20px;
-  border: 1px solid #cacaca;
-  background-color: #ffff00;
+  border: none;
+  background-color: ${(props) => (props.primary ? "##BFBFC1" : "#2F2D39")};
+  color: ${(props) => (props.primary ? "#0E0E10" : "#E8E7EE")};
   font-size: 24px;
-  font-weight: 700;
-  flex: 1;
+  height: 90px;
+  width: 90px;
+  flex: ${(props) => (props.flex ? "3" : "1")};
 
-  &:hover{
-    opacity: 0.6;
+  &:hover {
+    opacity: 0.8;
   }
 `;
 

@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 const InputContainer = styled.div`
   width: 100%;
-  height: 75px;
-  background-color: #aaafff;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -11,13 +10,15 @@ const InputContainer = styled.div`
   font-family: "Roboto";
 
   input {
-    padding: 0 10px;
-    font-size: 24px;
+    padding: 10px 25px;
+    line-height: 130px;
+    font-size: 3.5rem;
+    text-align: end;
     font-family: "Roboto";
     width: 100%;
-    height: 75px;
-    background-color: #aaafff;
-    color: #fefefe
+    height: 80px;
+    background-color: #2f2d39;
+    color: #fefefe;
   }
 `;
 
